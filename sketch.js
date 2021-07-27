@@ -15,19 +15,22 @@ var button;
 var blower;
 var ball;
 var blowerMouth;
-var Matter
+
 
 
 function setup() {
   createCanvas(500,500);
   
-  ball = new Ball(200, 300, 30, 20)
-
+  
+  blower = new Blower(200,300,60,6)
+  ball = new Ball(150, 250, 30, 20)
+  blowerMouth = new BlowerMouth(260,350,40,50)
 
 
 
   
-  
+  engine = Engine.create()
+  world = engine.world
   
   createSprite(400, 200, 50, 50);
 }
