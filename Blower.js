@@ -1,5 +1,5 @@
 class Blower {
-    constructor(x, y, w, h) {
+    constructor(x, y, width, height) {
       let options = {
         isStatic: true
       }
